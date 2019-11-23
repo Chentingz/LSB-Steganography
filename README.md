@@ -12,12 +12,23 @@
 - 文本隐藏于载体图像中
   - 在test/secret_text.txt中输入秘密信息
   - 运行LSB.py
-  - 在test目录下将生成mod_img.bmp（嵌有秘密信息的载体图像）、img_raw_and_mod_compare.png（原始载体图像与嵌有秘密信息的载体图像的对比图）、output_secret_text.txt（从载体图像中提取的结果）
+  - 在test目录下将生成  
+  ```
+  mod_img.bmp（嵌有秘密信息的载体图像）
+  img_raw_and_mod_compare.png（原始载体图像与嵌有秘密信息的载体图像的对比图）
+  output_secret_text.txt（从载体图像中提取的结果）
+  ```
   - 也可以在控制台上查看秘密信息提取的结果
 
 - 加噪处理
   - 运行Noise.py
-  - 在test目录下将生成img_gaussian.bmp（加高斯噪声后的嵌有秘密信息的图像）、img_sp.bmp（加椒盐噪声后的嵌有秘密信息的图像）、img_mod_and_noises_compare.png（加噪前后的图像对比）
+  - 在test目录下将生成
+  ```
+  img_gaussian.bmp（加高斯噪声后的嵌有秘密信息的图像）
+  img_sp.bmp（加椒盐噪声后的嵌有秘密信息的图像）
+  img_mod_and_noises_compare.png（加噪前后的图像对比）
+  ```
+  - 在控制台上可以查看从嵌有秘密信息的载体图像、高斯噪声处理后图像、椒盐噪声处理后图像中提取的结果
 
 ## 依赖
 - Pillow (Python Imaging Library)：用于秘密信息嵌入和提取时的图像处理
